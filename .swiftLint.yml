@@ -1,0 +1,16 @@
+disabled_rules:
+- trailing_whitespace
+
+excluded:
+- Pods/
+- Podfile
+- Podfile.lock
+- R.generated.swift
+- rx_swift_sample/SceneDelegate.swift
+- rx_swift_sampleTests/
+- rx_swift_sampleUITests/
+
+line_length: 300
+
+identifier_name:
+  min_length: 1

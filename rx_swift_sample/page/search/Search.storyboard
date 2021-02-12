@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ng3-hG-9gM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Qiita検索-->
+        <scene sceneID="9RD-3c-Ov6">
+            <objects>
+                <viewController id="Ng3-hG-9gM" customClass="SearchViewController" customModule="rx_swift_sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7nT-7p-6Eg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="1nh-WM-Yb6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nDU-R2-VnB">
+                                <rect key="frame" x="0.0" y="116" width="414" height="746"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nL4-xV-DpD" firstAttribute="trailing" secondItem="nDU-R2-VnB" secondAttribute="trailing" id="0Mx-M1-P4w"/>
+                            <constraint firstItem="nL4-xV-DpD" firstAttribute="bottom" secondItem="nDU-R2-VnB" secondAttribute="bottom" id="7el-u7-J8o"/>
+                            <constraint firstItem="1nh-WM-Yb6" firstAttribute="top" secondItem="nL4-xV-DpD" secondAttribute="top" id="Id1-jl-usB"/>
+                            <constraint firstItem="1nh-WM-Yb6" firstAttribute="trailing" secondItem="nL4-xV-DpD" secondAttribute="trailing" id="MF2-ax-iP6"/>
+                            <constraint firstItem="nDU-R2-VnB" firstAttribute="leading" secondItem="nL4-xV-DpD" secondAttribute="leading" id="O0O-qx-8cb"/>
+                            <constraint firstItem="nDU-R2-VnB" firstAttribute="top" secondItem="1nh-WM-Yb6" secondAttribute="bottom" constant="16" id="Td5-z0-mwP"/>
+                            <constraint firstItem="1nh-WM-Yb6" firstAttribute="leading" secondItem="nL4-xV-DpD" secondAttribute="leading" id="dOw-Ol-MJt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nL4-xV-DpD"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Qiita検索" id="5vv-m5-TNc"/>
+                    <connections>
+                        <outlet property="searchBar" destination="1nh-WM-Yb6" id="0bt-XX-GlT"/>
+                        <outlet property="tableView" destination="nDU-R2-VnB" id="Thr-wQ-eaV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6tK-s4-ogh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
