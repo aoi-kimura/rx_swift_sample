@@ -24,6 +24,11 @@
 		5889054524C560ED0033CA2F /* DetailItemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5889054424C560ED0033CA2F /* DetailItemFactory.swift */; };
 		58E31EDE24CD975B00D75B31 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E31EDD24CD975B00D75B31 /* R.generated.swift */; };
 		58F59EFB24BC184B009758DD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F59EFA24BC184B009758DD /* Item.swift */; };
+		58FF9AFE25D7EF8200391B0B /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5872001924BB1C5D00E3E672 /* SearchViewModel.swift */; };
+		58FF9B0225D7F02100391B0B /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5872001924BB1C5D00E3E672 /* SearchViewModel.swift */; };
+		58FF9B0625D7F04D00391B0B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F59EFA24BC184B009758DD /* Item.swift */; };
+		58FF9B0A25D7F04D00391B0B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F59EFA24BC184B009758DD /* Item.swift */; };
+		58FF9B0F25D7F08300391B0B /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF9B0E25D7F08300391B0B /* SearchViewModelTests.swift */; };
 		AAF87E49B10F9BFD2BED857C /* Pods_rx_swift_sample_rx_swift_sampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C24670E3EAAF445C6FAF63 /* Pods_rx_swift_sample_rx_swift_sampleUITests.framework */; };
 		AEE9EECFFD5F941EA72F398E /* Pods_rx_swift_sampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D9AFDFED85C68D5C561F19 /* Pods_rx_swift_sampleTests.framework */; };
 		CAF7F0E592923F6B7E36E80D /* Pods_rx_swift_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BDB9E39A047F026B7BDFC88 /* Pods_rx_swift_sample.framework */; };
@@ -73,6 +78,7 @@
 		5889054424C560ED0033CA2F /* DetailItemFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItemFactory.swift; sourceTree = "<group>"; };
 		58E31EDD24CD975B00D75B31 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		58F59EFA24BC184B009758DD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		58FF9B0E25D7F08300391B0B /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
 		7AC1603262587B4F02840239 /* Pods-rx_swift_sampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rx_swift_sampleTests.debug.xcconfig"; path = "Target Support Files/Pods-rx_swift_sampleTests/Pods-rx_swift_sampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7BDB9E39A047F026B7BDFC88 /* Pods_rx_swift_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rx_swift_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C24670E3EAAF445C6FAF63 /* Pods_rx_swift_sample_rx_swift_sampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rx_swift_sample_rx_swift_sampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +171,7 @@
 			children = (
 				58351F3424B746C7004CD7B6 /* rx_swift_sampleTests.swift */,
 				58351F3624B746C7004CD7B6 /* Info.plist */,
+				58FF9B0E25D7F08300391B0B /* SearchViewModelTests.swift */,
 			);
 			path = rx_swift_sampleTests;
 			sourceTree = "<group>";
@@ -259,6 +266,7 @@
 				58351F2C24B746C7004CD7B6 /* Sources */,
 				58351F2D24B746C7004CD7B6 /* Frameworks */,
 				58351F2E24B746C7004CD7B6 /* Resources */,
+				91EB8FCD5641BE05CF4970D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -437,7 +445,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/R.generated.swift,
+				"$SRCROOT/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -459,6 +467,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n${PODS_ROOT}/SwiftLint/swiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		91EB8FCD5641BE05CF4970D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rx_swift_sampleTests/Pods-rx_swift_sampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rx_swift_sampleTests/Pods-rx_swift_sampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rx_swift_sampleTests/Pods-rx_swift_sampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		D8D955D3F1617E9FCBCD2B1A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -523,6 +548,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58FF9AFE25D7EF8200391B0B /* SearchViewModel.swift in Sources */,
+				58FF9B0625D7F04D00391B0B /* Item.swift in Sources */,
+				58FF9B0F25D7F08300391B0B /* SearchViewModelTests.swift in Sources */,
 				58351F3524B746C7004CD7B6 /* rx_swift_sampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,6 +559,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58FF9B0225D7F02100391B0B /* SearchViewModel.swift in Sources */,
+				58FF9B0A25D7F04D00391B0B /* Item.swift in Sources */,
 				58351F4024B746C7004CD7B6 /* rx_swift_sampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,6 +634,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -664,6 +695,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
