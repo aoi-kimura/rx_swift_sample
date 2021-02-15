@@ -19,6 +19,9 @@ final class DetailItemFactory {
                           url: item.url)
     }
     
+    /**
+     fixme: dateformat使う
+     */
     private func makeCreatedAt(createdAt: String) -> String {
         return String(createdAt.prefix(10))
     }
